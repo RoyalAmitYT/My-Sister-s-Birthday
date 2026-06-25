@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Happy 15th Birthday Annu ❤️
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+
+    <div id="hearts-container"></div>
+
+    <!-- Background Music -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="music.mp3" type="audio/mp3">
+
+    </audio>
+
+    <!-- ==========================
+         PAGE 1 : WELCOME
+    =========================== -->
+
+    <section class="page active" id="page1">
+
+        <div class="glass-card">
+
+            <h1>
+                💖 Welcome Peyri Sister 💖
+            </h1>
+
+            <p>
+
+                Aaj ka din bahut special hai...
+                Lekin aage badhne se pehle ek promise karo ❤️
+
+            </p>
+
+            <p class="special-line">
+
+                Aaj har pal muskurati rahogi? 😊
+
+            </p>
+
+            <button onclick="nextPage(2)">
+
+                I Promise 😊
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+         PAGE 2 : STORY
+    =========================== -->
+
+    <section class="page" id="page2">
+
+        <div class="glass-card">
+
+            <h1>
+                ✨ Ek Choti Si Kahani ✨
+            </h1>
+
+            <div id="typing-box">
+
+            </div>
+
+            <button onclick="nextPage(3)">
+                Let's go ➜
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+     PAGE 3 : BrthdayWish
+========================== -->
+
+    <section class="page" id="page3">
+
+        <div class="glass-card">
+
+            <h1>
+                🎉 HAPPY 15TH BIRTHDAY 🎉
+            </h1>
+
+            <h2>
+                ANNU KUMARI ❤️
+            </h2>
+
+            <p>
+
+                Wishing you a day filled with happiness,
+                a year filled with success,
+                and a future filled with endless opportunities.
+
+                <br><br>
+
+                May all your dreams come true,
+                and may your smile always shine
+                as brightly as it does today.
+
+            </p>
+
+            <h3>
+                ✨ Happy Birthday ✨
+            </h3>
+
+            <button onclick="nextPage(4)">
+                Let's Celebrate 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+     PAGE 4 : CAKE CELEBRATION
+========================== -->
+
+    <section class="page" id="page4">
+
+        <div class="glass-card">
+
+            <h1>
+                🎂 Birthday Celebration 🎂
+            </h1>
+
+            <p>
+
+                A birthday becomes even more special
+                when it is celebrated with love, happiness,
+                and sweet memories. ❤️
+
+                And no birthday celebration is complete
+                without cutting a cake. 🎂✨
+
+            </p>
+
+            <div id="cake">
+
+                🎂
+
+            </div>
+
+            <button id="cutCakeBtn">
+
+                Let's cut the cake 🎂
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+     PAGE 5 : MEMORY WALL
+========================== -->
+
+    <section class="page" id="page5">
+
+        <div class="glass-card">
+
+            <h1>
+                📸 Beautiful Memories ❤️
+            </h1>
+
+            <p>
+
+                Har photo ke peeche ek yaad hai,
+                aur har yaad ke peeche ek muskurahat. ❤️
+
+            </p>
+
+            <div class="memory-gallery">
+
+                <div class="memory-card">
+
+                    <!-- Yaha Photo Add Karna -->
+
+                    <img src="photo1.jpg" alt="Memory 1">
+
+                </div>
+
+                <div class="memory-card">
+
+                    <img src="photo2.jpg" alt="Memory 2">
+
+                </div>
+
+                <div class="memory-card">
+
+                    <img src="photo3.jpg" alt="Memory 3">
+
+                </div>
+
+                <div class="memory-card">
+
+                    <img src="photo4.jpg" alt="Memory 4">
+
+                </div>
+
+            </div>
+
+            <button onclick="nextPage(7)">
+
+               Secret Letters 💌
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+     PAGE 6 : SECRET LETTERS
+========================== -->
+
+    <section class="page" id="page7">
+
+        <div class="glass-card">
+
+            <h1>
+                💌 Secret Letters 💌
+            </h1>
+
+
+            <div class="letters">
+
+                <div class="envelope" onclick="openLetter(1)">
+
+                    😊 Open When you Happy
+
+                </div>
+
+                <div class="envelope" onclick="openLetter(2)">
+
+                    😔 Open When you Sad
+
+                </div>
+
+                <div class="envelope" onclick="openLetter(3)">
+
+                    ❤️ Open When You Miss Me
+
+                </div>
+
+            </div>
+
+            <div id="letterContent">
+
+            </div>
+
+            <button onclick="nextPage(8)">
+
+                Next Surprise 🎁
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ==========================
+     PAGE 7 : CERTIFICATE
+========================== -->
+
+    <section class="page" id="page8">
+
+        <div class="certificate">
+
+            <h1>
+                🏆 Certificate Of Excellence 🏆
+            </h1>
+
+            <h2>
+                World's Best Sister
+            </h2>
+
+            <h3>
+                Annu Kumari ❤️
+            </h3>
+
+            <p>
+
+                This certificate is proudly awarded
+                to Annu Kumari for being the sweetest,
+                kindest and most amazing sister.
+
+            </p>
+
+            <p>
+
+                Awarded on:
+                26 June 2026 ❤️
+
+            </p>
+
+            <h4>
+
+                Presented By:
+                AMIT YT
+            </h4>
+
+            <button onclick="nextPage(9)">
+
+                Next Surprise 🎁
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================
+     PAGE 8 : LETTER
+========================== -->
+
+    <section class="page" id="page9">
+
+        <div class="letter-card">
+
+            <h1>
+                💌 A Letter For My Favourite Sister 💌
+            </h1>
+
+            <p>
+
+                Dear Annu ❤️
+                <br><br>
+
+                Aaj tumhara 15th birthday hai.
+
+                Aur sach kahu...
+
+                Mujhe nahi pata ki future me
+                hum kahan honge,
+                kya kar rahe honge,
+                ya kitne busy honge.
+
+                <br><br>
+
+                Lekin ek baat mujhe
+                hamesha pata rahegi...
+
+                Ki tum meri life ki
+                sabse special logon me se ek ho. ❤️
+
+                <br><br>
+
+                Tumhari khushi mere liye
+                bahut important hai.
+
+                Aur main hamesha dua karunga
+                ki tumhari life me
+                khushiyan hi khushiyan aaye.
+
+                <br><br>
+
+                Happy Birthday Meri Peyri Behen 🎂❤️
+
+                <br><br>
+
+                — With Love & Best Wishes ❤️
+
+            </p>
+
+            <button onclick="nextPage(11)">
+
+                One More Surprise ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==========================
+     PAGE 9 : ONE LAST THING
+========================== -->
+
+    <section class="page" id="page11">
+
+        <div class="glass-card">
+
+            <h1>
+                🥹 One Last Thing...
+            </h1>
+
+            <p>
+
+                Agar tum ye website
+                5 saal baad bhi dekh rahi ho...
+
+                <br><br>
+
+                To yaad rakhna,
+
+                <br><br>
+
+                Tum aaj bhi mere liye
+                utni hi special ho
+                jitni apne 15th birthday par thi. ❤️
+
+            </p>
+
+            <h3>
+
+                — Your Loving Brother ❤️
+
+            </h3>
+
+            <button onclick="nextPage(12)">
+                Final Surprise 🎉
+            </button>
+        </div>
+
+    </section>
+
+    <!-- ==========================
+     PAGE 10 : FINAL PAGE
+========================== -->
+
+    <section class="page final-page" id="page12">
+
+        <div class="glass-card">
+
+            <h1>
+                🎉 HAPPY 15TH BIRTHDAY 🎉
+            </h1>
+
+            <h2>
+                ANNU KUMARI ❤️
+            </h2>
+
+            <p>
+
+                Thank You For Being
+                The Best Sister In The World ❤️
+
+            </p>
+
+            <h3>
+
+                — From Your Brother, Amit ❤️
+
+            </h3>
+
+            <button onclick="restartStory()">
+
+                Celebrate Again 🎊
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Confetti Canvas -->
+
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
