@@ -232,7 +232,7 @@ if (cakeBtn) {
                     "🎂 Happy 15th Birthday Annu ❤️"
                 );
 
-                nextPage(5);
+                nextPage(7);
 
             }, 2500);
 
